@@ -1,0 +1,31 @@
+﻿<Window x:Class="BiuroPodrozy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Name="buttonAutobus" Content="Dodaj Autobus" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="97" Click="buttonAutobus_Click"/>
+        <Button Name="buttonPociag" Content="Dodaj Samolot" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="97" Click="buttonSamolot_Click"/>
+        <Button Name="buttonUsunOstatni" Content="Usuń Ostatni" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="75" Click="buttonUsunOstatni_Click"/>
+        <Button Name="buttonWyczysc" Content="Wyczyść" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Width="75" Click="buttonWyczysc_Click"/>
+        <Button Name="buttonUstawDate" Content="Ustaw datę" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="75" Click="buttonUstawDate_Click"/>
+        <Grid Name="panelAutobus" HorizontalAlignment="Left" Height="258" Margin="129,23,0,0" VerticalAlignment="Top" Width="175">
+            <TextBox Name="textboxMiejscaAutobus" HorizontalAlignment="Left" Height="23" Margin="21,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="labelMiejscaAutobus" Content="liczba miejsc" HorizontalAlignment="Left" Margin="21,45,0,0" VerticalAlignment="Top"/>
+            <Button Name="buttonDodajAutobus"  Content="Dodaj" HorizontalAlignment="Left" Margin="31,156,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodajAutobus_Click"/>
+        </Grid>
+        <Grid x:Name="panelSamolot" HorizontalAlignment="Left" Height="258" Margin="129,23,0,0" VerticalAlignment="Top" Width="175">
+            <Label Name="labelMiejscaPociag" Content="liczba miejsc" HorizontalAlignment="Left" Margin="22,45,0,0" VerticalAlignment="Top"/>
+            <Label Name="labelDlugoscTrasy" Content="długość trasy" HorizontalAlignment="Left" Margin="22,99,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="textboxDlugoscTrasy" HorizontalAlignment="Left" Height="23" Margin="22,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="textboxMiejscaPociag" HorizontalAlignment="Left" Height="23" Margin="22,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="buttonDodajPSamolot" Content="Dodaj" HorizontalAlignment="Left" Margin="27,201,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodajSamolot_Click"/>
+        </Grid>
+        <Grid Name ="panelSprawdzenieDaty" HorizontalAlignment="Left" Height="258" Margin="129,23,0,0" VerticalAlignment="Top" Width="175">
+            <Label Name="labelDataPodrozy" Content="data podróży (dd.mm.yyyy)" HorizontalAlignment="Left" Margin="21,44,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="textboxDataPodrozy" HorizontalAlignment="Left" Height="23" Margin="21,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button Name="buttonSprawdzDate" Content="Sprawdź datę" HorizontalAlignment="Left" Margin="70,118,0,0" VerticalAlignment="Top" Width="82" Click="buttonSprawdzDate_Click"/>
+        </Grid>
+        <TextBlock Name="textblockPlanPodrozy" HorizontalAlignment="Left" Margin="319,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="227" Width="188"/>
+
+    </Grid>
+</Window>
